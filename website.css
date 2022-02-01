@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+} 
+#header {
+  height: 100vh;
+  background-image: url("images2/background.png");
+  
+  background-position: center;
+  background-size: cover;
+}   
+
+
+
+#img-logo{
+  position: absolute;
+  left: 65px;
+  top: 15px;
+  width: 100px;
+  height: 100px;
+
+}
+
+
+.heading-text{
+  position: absolute;
+  top: 40%;
+  left: 65px;
+  width: 500px;
+  text-align:left;
+  height: 30%;
+
+}
+
+.heading-text h1{
+ 
+  font-size: 3rem;
+  padding: 10px;
+  margin: 5px;
+  font-family: 'Acme', sans-serif;
+  text-transform: capitalize;
+  color: rgba(0,0,0,0.5);
+}
+.heading-text p{
+  
+  font-size: 16px;
+  color: black;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+ 
+#btn{
+ 
+  margin: 21px;
+  padding: 10px;
+  font-size: 23px;
+  font-weight: bold;
+  background: #FAB3C4;
+  border-radius: 5px;
+  font-family: monospace;
+  transition: all 0.4s ease;
+}
+#btn:hover{
+  background: black;
+  color: white;
+}
+.line{
+  margin: 15px 0 ;
+}
+
+  .line1{
+    display: inline-block;
+    
+    width: 20px;
+    height: 20px;
+    background: brown;
+  }
+
+  .line2{
+    display: inline-block;
+  
+    width: 88px;
+    height: 3px;
+    background: brown;
+  }
+
+  .line3{
+    display: inline-block;
+    
+    width: 88px;
+    height: 3px;
+    background: brown;
+  }
+
+
+
+  #about{
+    display: flex;
+    padding: 100px 0 ;
+flex-wrap: wrap;
+text-align: center;
+
+  }
+.about-left-col{
+  flex-basis: 50%;
+
+}
+.about-left-col img{
+  width: 100%;
+}
+.about-right-col{
+flex-basis: 50%;
+right: 100px;
+   
+}
+.about-right-text{
+margin-right: 100px;
+  max-width: 500px;
+  display: inline-block;
+  align-items: right;
+}
+.about-right-text h1{
+  margin: 20px 0;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.about-right-text p{
+  
+  font-size: 18px;
+  color: rgba(0,0,0,0.8);
+  letter-spacing: 1px;
+}
+.side-nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #f67c92;
+  width: 250px;
+  height: 100vh;
+  transition: all 0.5s linear;
+}
+.side-nav ul{
+    padding: 20px 10px;
+    margin: 5px 10px;
+    list-style: none;
+}
+.side-nav ul li{
+ padding: 20px 10px;
+ font-size: 25px;
+
+
+}
+.side-nav ul li a:hover{
+  color: black;
+   
+
+
+
+}
+.side-nav ul a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+#menu-btn{
+    width: 38px;
+    height: 38px;
+    position: fixed;
+    right: 40px;
+    top: 40px;
+    border-radius: 4px;
+}
+
+    #courses{
+      padding-top: 100px;
+      margin-top: 50px;
+
+
+    }
+    .service-header{
+      text-align: center;
+    }
+    .service-header h1{
+     margin: 20px;
+     font-size: 22px;
+     text-transform:capitalize ;
+     letter-spacing: 1px;
+     position: relative;
+    }
+    .service-header h1::before{
+      content: " ";
+      position: absolute;
+      bottom: -15px;
+      left: 49%;
+     
+      transform: translate(-50%,-50%);
+      background-color: crimson;
+      width: 101px;
+      height: 3px;
+
+
+    }
+    .service-header p{
+      width: 80%;
+      text-align: center;
+      text-align-last: center;
+      margin: 0 auto;
+      font-size: 17px;
+      padding-top: 15px;
+      margin-bottom: 40px;
+    }
+    .course-row{
+      display: flex;
+      width: 80%;
+      height: 100vh;
+      margin: 0 auto;
+      justify-content: space-around;
+     
+      flex-wrap: wrap;
+      
+    }
+    .course-col1{
+      flex-basis: 25%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background: white;
+      height: 340px;
+      border: 2px solid rgb(155, 146, 146);
+       display: block;
+       border-radius: 4px;
+    }
+     .course-col1:hover{
+      box-shadow: 1px 5px 8px grey;
+      background: white;
+      border: 2px solid crimson;
+    }
+     
+    .course-col1 h1{
+      color: #262626;
+    
+      font-size: 27px;
+      text-align: center;
+      position: relative;
+       
+      
+    }
+    
+    .course-col2 h1{
+      
+      color: #262626;
+      font-size: 27px;
+      text-align: center;
+      position: relative;
+       
+      
+    }
+    
+    .course-col3 h1{
+      color: #262626;
+      font-size: 27px;
+      text-align: center;
+      position: relative;
+      
+      /* top: -14%; */
+    }
+    .course-col1 p{
+      text-align: center;
+      letter-spacing: 1px;
+      font-size: 14px;
+      top: 30%;
+      opacity: 0;
+      word-break: break-all;
+      text-align: center;
+      text-align-last: center; 
+      position: relative;
+   }
+
+    .course-col1 img{
+      width: 80%;
+    }
+    
+    .course-col1:hover.course-col1 p{
+      top: -10%;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+    .course-col1:hover.course-col1 h1{
+      font-size: 22px;
+     top: -14%;
+     transition: all 0.3s ease-in-out;
+    }
+    .course-col2{
+      flex-basis: 25%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      height: 340px;
+      border: 2px solid rgb(155, 146, 146);
+      display: block;
+      border-radius: 4px;
+    }
+    
+    .course-col2:hover{
+      box-shadow: 1px 5px 8px grey;
+      background: white;
+      border: 2px solid crimson;
+    }
+    
+    .course-col2:hover.course-col2 p{
+      top: -10%;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+    .course-col2:hover.course-col2 h1{
+      font-size: 22px;
+     top: -14%;
+     transition: all 0.3s ease-in-out;
+    }
+    
+    .course-col2 img{
+      width: 80%;
+    }
+     .course-col3{
+       flex-basis: 25%;
+       flex-grow: 0;
+       flex-shrink: 0;
+       height: 340px;
+       border: 2px solid rgb(155, 146, 146);
+       display: block;
+       border-radius: 4px;
+     }
+     .course-col3:hover{
+       box-shadow: 1px 5px 8px grey;
+       background: white;
+       border: 2px solid crimson;
+     }
+     .course-col3:hover.course-col3 p{
+       top: -10%;
+       opacity: 1;
+       transition: all 0.4s ease-in-out;
+     }
+     .course-col3:hover.course-col3 h1{
+      font-size: 22px;
+      top: -14%;
+      transition: all 0.3s ease-in-out;
+     }
+    .course-col3 img{
+      width: 80%;
+    }
+    .course-col3 p{
+      text-align: center;
+      letter-spacing: 1px;
+      font-size: 14px;
+      top: 30%;
+      opacity: 0;
+      word-break: break-all;
+      text-align: center;
+      text-align-last: center;
+
+      position: relative;
+    }
+    
+    .course-col2 p{
+      text-align: center;
+      letter-spacing: 1px;
+      font-size: 14px;
+      top: 30%;
+      opacity: 0;
+      word-break: break-all;
+      text-align: center;
+      text-align-last: center;
+
+      position: relative;
+    } 
+    #contact{
+      padding-top: 20px ;
+      margin-top: 15px;
+    }
+    
+
+    
+    .main-div {
+      background-color: blanchedalmond;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .box {
+      height: 50%;
+      width: 30%;
+     
+      background: rgba(0, 0, 0, 0.8);
+      padding: 50px;
+      border-radius: 10px;
+      position: absolute;
+      box-shadow: 6px 6px 8px  white;
+    }
+    
+    .box h1 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 30px;
+      text-transform: capitalize;
+    }
+    
+    .input-box {
+      position: relative;
+    }
+    .input-box input  {
+      width: 100%;
+      padding: 12px;
+      font-size: 20px;
+      color: #fff;
+      background: transparent;
+      border: none;
+      border-bottom: 1px dashed #fff;
+      letter-spacing: 1px;
+      outline: none;
+    }
+    .input-box input:focus ~ label , .input-box input:valid ~ label {
+        top:-2px;
+        color: blue;
+        font-size: xx-small;
+    }
+    
+    .input-box label {
+      position: absolute;
+      top: 4px;
+      left: 0px;
+      padding: 10px;
+      letter-spacing: 1px;
+      color: #fff;
+      font-size: 18px;
+      text-transform: capitalize;
+      transition: 0.5s;
+    }
+
+
+    .box input[type="submit"] {
+      top: 30px;
+      font-family: "Roboto", sans-serif;
+      position: relative;
+      font-size: 21px;
+
+      border-radius: 5px;
+      background: transparent;
+      padding: 10px;
+      color: #fff;
+      background: #03a9f4;
+      border: none;
+      outline: none;
+    }
+     
